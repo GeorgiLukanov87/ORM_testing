@@ -43,13 +43,14 @@ class Task(models.Model):
 
 class HotelRoom(models.Model):
     ROOM_TYPES = [
-        ("st", "Standard"),
-        ("dlx", "Deluxe"),
-        ("suite", "Suite"),
+        ("St", "Standard"),
+        ("De", "Deluxe"),
+        ("Su", "Suite"),
     ]
     room_number = models.PositiveIntegerField()
 
     room_type = models.CharField(
+        max_length=20,
         choices=ROOM_TYPES,
     )
 
@@ -65,3 +66,6 @@ class HotelRoom(models.Model):
     is_reserved = models.BooleanField(
         default=False
     )
+
+    def __str__(self):
+        return f"Deluxe room with number {self.room_number} cost {self.price_per_night}$ price per night!"
