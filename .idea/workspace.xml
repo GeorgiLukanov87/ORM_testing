@@ -7,6 +7,7 @@
     <list default="true" id="47ac61a3-cfb3-4577-aaba-6faea94cd81b" name="Changes" comment="initial">
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/caller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_app/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ORM_testing/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORM_testing/settings.py" afterDir="false" />
     </list>
