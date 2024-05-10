@@ -68,4 +68,4 @@ class HotelRoom(models.Model):
     )
 
     def __str__(self):
-        return f"Deluxe room with number {self.room_number} cost {self.price_per_night}$ price per night!"
+        return f"{self.room_type} room with number {self.room_number} cost {self.price_per_night}$ price per night!"

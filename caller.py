@@ -7,7 +7,7 @@ from django.db.models import QuerySet
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ORM_testing.settings")
 django.setup()
 
-from main_app.models import Car, Task
+from main_app.models import Car, Task, HotelRoom
 
 
 def apply_discount() -> None:
@@ -77,4 +77,55 @@ def encode_and_replace(text: str, task_title: str) -> None:
 # encode_and_replace('asd$f323%#$3f#f3', 'Task - 1')
 # encode_and_replace('111#$3f#f3', 'task 4')
 # encode_and_replace('111#$3f#f3', 'Task 5')
-encode_and_replace('XXXXXX', 'Task 6')
+# encode_and_replace('XXXXXX', 'Task 6')
+
+
+def get_deluxe_room() -> str:
+    deluxe_rooms = HotelRoom.objects.filter(room_type="Deluxe")
+
+    return '\n'.join(str(room) for room in deluxe_rooms if room.id % 2 == 0)
+
+
+#
+# print(get_deluxe_room())
+
+
+def reserve_first_room() -> None:
+    return HotelRoom.objects.filter(id=1).update(is_reserved=True)
+
+    # room = HotelRoom.objects.first()
+    # room.is_reserved = True
+    # room.save()
+
+
+# reserve_first_room()
+
+
+def delete_last_room() -> None:
+    return HotelRoom.objects.filter(is_reserved=True).last().delete()
+
+    # last_room = HotelRoom.objects.last()
+    # if last_room.is_reserved:
+    #     last_room.delete()
+
+
+# delete_last_room()
+
+
+def increase_room_capacity() -> None:
+    rooms = HotelRoom.objects.all().order_by('id')
+    previous_room_cap = None
+
+    for room in rooms:
+        if room.is_reserved:
+            continue
+
+        if previous_room_cap:
+            room.capacity += previous_room_cap
+        else:
+            room.capacity = room.id
+
+        previous_room_cap = room.capacity
+        room.save()
+
+# increase_room_capacity()
