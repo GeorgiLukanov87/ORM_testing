@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>648</IntrospectionStateNumber>
+      <IntrospectionStateNumber>671</IntrospectionStateNumber>
       <ServerVersion>13.14</ServerVersion>
       <StartupTime>1715338791</StartupTime>
       <TimeZones>true ACDT
@@ -1407,7 +1407,7 @@ true posixrules
 13184||10|C|G
 13184||-9223372036854775808|U|G
 13184||10|U|G</Grants>
-      <IntrospectionStateNumber>648</IntrospectionStateNumber>
+      <IntrospectionStateNumber>671</IntrospectionStateNumber>
       <ObjectId>32768</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -6286,9 +6286,9 @@ true posixrules
     <schema id="256" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>648</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2024-05-10.14:20:30.540</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-05-10.11:20:30</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>671</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2024-05-10.14:56:48.792</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-05-10.11:56:48</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>287</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -6368,7 +6368,7 @@ true posixrules
     <sequence id="266" parent="256" name="main_app_car_id_seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>32928</ObjectId>
-      <SequenceIdentity>1(1)</SequenceIdentity>
+      <SequenceIdentity>1(9)</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>645</StateNumber>
       <OwnerName>postgres</OwnerName>
