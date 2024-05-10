@@ -69,3 +69,31 @@ class HotelRoom(models.Model):
 
     def __str__(self):
         return f"{self.room_type} room with number {self.room_number} cost {self.price_per_night}$ price per night!"
+
+
+class Character(models.Model):
+    CHARACTER_CLASS_NAMES_CHOICES = [
+        ('Ma', 'Mage'),
+        ('Wa', 'Warrior'),
+        ('As', 'Assassin'),
+        ('Sc', 'Scout'),
+    ]
+    name = models.CharField(
+        max_length=100,
+    )
+
+    class_name = models.CharField(
+        choices=CHARACTER_CLASS_NAMES_CHOICES
+    )
+
+    level = models.PositiveIntegerField()
+
+    strength = models.PositiveIntegerField()
+
+    dexterity = models.PositiveIntegerField()
+
+    intelligence = models.PositiveIntegerField()
+
+    hit_points = models.PositiveIntegerField()
+
+    inventory = models.TextField()
