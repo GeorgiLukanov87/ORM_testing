@@ -20,6 +20,7 @@ def apply_discount() -> None:
         car.save()
 
 
+
 # apply_discount()
 
 

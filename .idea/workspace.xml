@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47ac61a3-cfb3-4577-aaba-6faea94cd81b" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/caller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_app/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_app/migrations/0002_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_app/migrations/0003_hotelroom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_app/migrations/0004_alter_hotelroom_room_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_app/migrations/0005_character.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_app/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ec9a368a-026d-4a3b-b487-92ec69d1067b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ec9a368a-026d-4a3b-b487-92ec69d1067b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ec9a368a-026d-4a3b-b487-92ec69d1067b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ec9a368a-026d-4a3b-b487-92ec69d1067b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ec9a368a-026d-4a3b-b487-92ec69d1067b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ec9a368a-026d-4a3b-b487-92ec69d1067b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORM_testing/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORM_testing/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORM_testing/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORM_testing/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORM_testing/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORM_testing/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORM_testing/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORM_testing/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +27,27 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2gK2iIN7nJxs9OVk0QReKWR35ni" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -49,7 +55,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python.caller">
+  <component name="RunManager" selected="Python.test15">
     <configuration name="caller" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ORM_testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,6 +100,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test15" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ORM_testing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_app/test15.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ORM_testing" type="Python.DjangoServer" factoryName="Django server">
       <module name="ORM_testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,13 +148,27 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test15" />
         <item itemvalue="Python.caller" />
         <item itemvalue="Python.settings" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47ac61a3-cfb3-4577-aaba-6faea94cd81b" name="Changes" comment="initial" />
+      <created>1715432075212</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715432075212</updated>
+      <workItem from="1715432078174" duration="31000" />
+      <workItem from="1715432736948" duration="310000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="python:Django" />
@@ -141,5 +183,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ORM_testing$caller.coverage" NAME="caller Coverage Results" MODIFIED="1715354289358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ORM_testing$settings.coverage" NAME="settings Coverage Results" MODIFIED="1715341261841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ORM_testing" />
+    <SUITE FILE_PATH="coverage/ORM_testing$test15.coverage" NAME="test15 Coverage Results" MODIFIED="1715432887565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main_app" />
   </component>
 </project>
