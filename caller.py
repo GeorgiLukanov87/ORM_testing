@@ -7,7 +7,7 @@ from django.db.models import QuerySet, F
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ORM_testing.settings")
 django.setup()
 
-from main_app.models import Car, Task, HotelRoom, Character, Pet, Artifact
+from main_app.models import Car, Task, HotelRoom, Character, Pet, Artifact, Location
 
 
 # Task 1
@@ -46,6 +46,32 @@ def delete_all_artifacts() -> None:
 
 
 # delete_all_artifacts()
+
+
+# Task 3
+def show_all_locations() -> str:
+    locations = Location.objects.all().order_by('pk')
+
+    return '\n'.join(str(l) for l in locations)
+
+
+def new_capital() -> None:
+    Location.objects.filter(pk=1).update(is_capital=True)
+
+
+def get_capitals() -> QuerySet:
+    return Location.objects.filter(is_capital=True).values('name')
+
+
+def delete_first_location() -> None:
+    Location.objects.filter(pk=1).delete()
+
+
+# print(show_all_locations())
+# print(new_capital())
+# print(get_capitals())
+# delete_first_location()
+
 
 def apply_discount() -> None:
     cars = Car.objects.all()
