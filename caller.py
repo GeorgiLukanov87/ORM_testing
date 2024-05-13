@@ -73,6 +73,7 @@ def delete_first_location() -> None:
 # delete_first_location()
 
 
+# Task 4
 def apply_discount() -> None:
     cars = Car.objects.all()
 
@@ -103,7 +104,7 @@ def delete_last_car() -> None:
 # print('Cars count after deleting the last one: ')
 # print(Car.objects.all().count())
 
-
+# Task 5
 def show_undefined_task() -> str:
     unfinished_tasks = Task.objects.filter(is_finished=False)
 
@@ -142,14 +143,13 @@ def encode_and_replace(text: str, task_title: str) -> None:
 # encode_and_replace('111#$3f#f3', 'Task 5')
 # encode_and_replace('XXXXXX', 'Task 6')
 
-
+# Task 6
 def get_deluxe_room() -> str:
     deluxe_rooms = HotelRoom.objects.filter(room_type="Deluxe")
 
     return '\n'.join(str(room) for room in deluxe_rooms if room.id % 2 == 0)
 
 
-#
 # print(get_deluxe_room())
 
 
@@ -195,6 +195,7 @@ def increase_room_capacity() -> None:
 # increase_room_capacity()
 
 
+# Task 7
 def update_characters() -> None:
     Character.objects.filter(class_name='Mage').update(
         level=F('level') + 3,

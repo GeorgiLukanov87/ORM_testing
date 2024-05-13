@@ -52,6 +52,7 @@ class Location(models.Model):
         return f"{self.name} has a population of {self.population}!"
 
 
+# Task 4
 class Car(models.Model):
     model = models.CharField(
         max_length=40,
@@ -75,6 +76,7 @@ class Car(models.Model):
     )
 
 
+# Task 5
 class Task(models.Model):
     title = models.CharField(
         max_length=25,
@@ -92,6 +94,7 @@ class Task(models.Model):
         return f"Task - {self.title} needs to be done until {self.due_date}!"
 
 
+# Task 6
 class HotelRoom(models.Model):
     ROOM_TYPES = [
         ("St", "Standard"),
@@ -122,6 +125,7 @@ class HotelRoom(models.Model):
         return f"{self.room_type} room with number {self.room_number} cost {self.price_per_night}$ price per night!"
 
 
+# Task 7
 class Character(models.Model):
     CHARACTER_CLASS_NAMES_CHOICES = [
         ('Ma', 'Mage'),
