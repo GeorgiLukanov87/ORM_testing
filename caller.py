@@ -7,7 +7,21 @@ from django.db.models import QuerySet, F
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ORM_testing.settings")
 django.setup()
 
-from main_app.models import Car, Task, HotelRoom, Character
+from main_app.models import Car, Task, HotelRoom, Character, Pet
+
+
+# Task 1
+def create_pet(name: str, species: str) -> str:
+    Pet.objects.create(
+        name=name,
+        species=species,
+    )
+    return f"{name} is a very cute {species}!"
+
+
+print(create_pet('Buddy', 'Dog'))
+print(create_pet('Whiskers', 'Cat'))
+print(create_pet('Rocky', 'Hamster'))
 
 
 def apply_discount() -> None:
@@ -18,7 +32,6 @@ def apply_discount() -> None:
         discount = float(car.price) * percentage_off
         car.price_with_discount = float(car.price) - discount
         car.save()
-
 
 
 # apply_discount()
@@ -192,7 +205,6 @@ def grand_strength() -> None:
 
 def delete_characters() -> None:
     Character.objects.filter(inventory="The inventory is empty").delete()
-
 
 # character1 = Character.objects.create(
 #     name="Gandalf",

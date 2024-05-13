@@ -1,6 +1,16 @@
 from django.db import models
 
 
+class Pet(models.Model):
+    name = models.CharField(
+        max_length=40,
+    )
+
+    species = models.CharField(
+        max_length=40,
+    )
+
+
 class Car(models.Model):
     model = models.CharField(
         max_length=40,
