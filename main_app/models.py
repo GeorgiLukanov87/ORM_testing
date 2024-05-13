@@ -1,6 +1,7 @@
 from django.db import models
 
 
+# Task 1
 class Pet(models.Model):
     name = models.CharField(
         max_length=40,
@@ -8,6 +9,25 @@ class Pet(models.Model):
 
     species = models.CharField(
         max_length=40,
+    )
+
+
+# Task 2
+class Artifact(models.Model):
+    name = models.CharField(
+        max_length=70,
+    )
+
+    origin = models.CharField(
+        max_length=70,
+    )
+
+    age = models.PositiveIntegerField()
+
+    description = models.TextField()
+
+    is_magical = models.BooleanField(
+        default=False,
     )
 
 
